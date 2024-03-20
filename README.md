@@ -25,6 +25,6 @@ A step-by-step series of examples that tell you how to get a development environ
 1. Clone the repository to your local machine using Git:
 
 ```sh
-git clone https://github.com/your-username/your-project-name.git
+git clone https://github.com/faiza-naseer/project-management.git
 
 cd your-project-name
