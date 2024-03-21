@@ -1,0 +1,148 @@
+/* Basic Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Layout */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #023047;
+    color: #fff;
+    padding: 20px;
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.table-button-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.add-button {
+    background-color: #023047;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    font-size: 14px;
+    margin: 8px 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.add-button:hover {
+    background-color: #045A8D;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.logo {
+    max-height: 50px;
+}
+
+/* Stats Boxes */
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.box {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 10px;
+    flex-basis: 48%;
+    width: 30%;
+    position: relative;
+}
+
+/* Task List */
+.task-list {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Navigation & User Icon */
+.user-icon img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.navigation {
+    margin-top: 20px;
+}
+
+.projects-accordion {
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #219ebc;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Enhancements for interaction */
+.box:hover, .projects-accordion:hover {
+    background-color: #023e8a;
+}
+
+/* Scrollable Projects List */
+.projects-list {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+.project {
+    background: #8ecae6;
+    color: #03045e;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+}
